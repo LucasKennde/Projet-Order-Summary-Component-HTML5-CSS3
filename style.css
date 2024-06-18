@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  transition: 0.3s;
+}
+
+body{
+    background: #E0E8FF;
+}
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px
+}
+.curve{
+  width: 100%;
+  height:428px;
+  position: absolute;
+  top: 0;
+  background-image: url('assets/Path\ 2.png');  
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.container{
+  max-width: 450px;
+  height: auto;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0px 40px 40px -20px #0D30BD27;
+  border-radius: 20px;
+}
+
+.header-summary{
+    width: 100%;
+    height: 220px;
+    background-image: url('assets/Music_Flatline.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.main-summary{
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    align-items: center;
+}
+
+.main-summary h1{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 17px;
+
+}
+.main-summary p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #717fa6;
+    text-align: center;
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-plan{
+    display: flex;
+    padding: 24px 25px;
+    align-items: center;
+    background: #F7F9FF;
+    min-width: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.value-plan{
+    display: flex;
+    gap:20px
+}
+.value-plan h2{
+    font-size: 16px;
+    font-weight: 900;
+    color: #1f2e55;
+}
+.value-plan span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #717fa6;
+}
+.container-plan a{
+    color: #382ae1;
+    font-size: 14px;
+    font-weight: 700;
+}
+.container-plan a:hover{
+    text-decoration: none;
+    color: #776cf1;
+}
+.container-payment{
+    width: 100%;
+    text-align: center;
+}
+.container-payment button{
+    min-width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding: 15px 0px;
+    box-shadow: 0px 20px 20px 0px #382AE131;
+    color: #fff;
+    background-color: #382ae1;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 32px 0px;
+}
+.container-payment button:hover{
+    background-color: #776cf1;
+}
+.container-payment a{
+    font-size: 15px;
+    font-weight: 900;
+    color: #717fa6;
+    text-decoration: none;
+
+}
+
+.container-payment a:hover{
+    color: #1F2E55;
+
+}
+
+
+@media screen and (max-width:500px) {
+    .main-summary{
+
+        padding: 24px;
+       
+    }
+    .value-plan span{
+        font-size: 14px;
+        font-weight: 500;
+        color: #717fa6;
+    }
+    .value-plan h2{
+        font-size: 14px;}
+    .container-plan a{
+        font-size: 13px;
+    }
+    .container-plan{
+        margin-top: 24px;
+        padding: 16px 17px;
+       
+    }
+    
+    .main-summary p{
+        padding: 0px;
+    }
+}
